@@ -1,1 +1,860 @@
-<h1>Home sweet home</h1>
+<!DOCTYPE html>
+<html>
+ <head>
+      <style>
+          .landing-page {
+                background-color: #ffffff;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                width: 100%;
+          }
+
+          .landing-page .div {
+                background-color: #ffffff;
+                overflow: hidden;
+                width: 1440px;
+                height: 5839px;
+                position: relative;
+          }
+
+          .landing-page .overlap {
+                position: absolute;
+                width: 1440px;
+                height: 130px;
+                top: 0;
+                left: 0;
+                background-color: #ffffff;
+                box-shadow: 0px 4px 4px #00000040;
+          }
+
+          .landing-page .overlap-group {
+                position: absolute;
+                width: 268px;
+                height: 46px;
+                top: 42px;
+                left: 208px;
+                border-radius: 30px;
+          }
+
+          .landing-page .text-wrapper {
+                position: absolute;
+                top: 7px;
+                left: 80px;
+                font-family: "Poppins-Light", Helvetica;
+                font-weight: 300;
+                color: #000000;
+                font-size: 20px;
+                letter-spacing: 0;
+                line-height: normal;
+          }
+
+          .text-wrapper input{
+                background-color: #009c86;
+                width: 20vw;
+                height: 5vh;
+                font-weight: bold;
+          }
+
+          .landing-page .icon-search {
+                position: absolute;
+                width: 25px;
+                height: 25px;
+                top: 11px;
+                left: 17px;
+          }
+
+          .search
+          {
+                top:10vh;
+                display: flex;
+                align-items: center;
+               
+          }
+
+          .search input
+          {
+                top:10vh;
+                width :30vw;
+                height: 20px;
+                border-radius: 10px;
+                margin: 0 16px 0 56px;
+          }
+
+          .landing-page .group {
+                position: absolute;
+                width: 384px;
+                height: 30px;
+                top: 50px;
+                left: 995px;
+          }
+
+          .group a{
+                text-decoration: none;
+          }
+          .landing-page .text-wrapper-2 {
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-family: "Poppins-Light", Helvetica;
+                font-weight: 300;
+                color: #000000;
+                font-size: 20px;
+                letter-spacing: 0;
+                line-height: normal;
+          }
+
+          .landing-page .text-wrapper-3 {
+                top: 0;
+                left: 220px;
+                font-family: "Poppins-Light", Helvetica;
+                font-weight: 300;
+                color: #000000;
+                font-size: 20px;
+                position: absolute;
+                letter-spacing: 0;
+                line-height: normal;
+          }
+
+          .landing-page .group-2 {
+                position: absolute;
+                width: 76px;
+                height: 91px;
+                top: 20px;
+                left: 48px;
+          }
+
+          .landing-page .overlap-2 {
+                position: absolute;
+                width: 63px;
+                height: 63px;
+                top: 0;
+                left: 6px;
+          }
+
+          .landing-page .logo-shapes {
+                position: absolute;
+                width: 7vw;
+                height: 15vh;
+                top: 1vh;
+                left: 0.001vw;
+          }
+           
+          .landing-page .out-settle {
+                position: absolute;
+                top: 73px;
+                left: 0;
+                font-family: "Montserrat-Bold", Helvetica;
+                font-weight: 400;
+                color: #000000;
+                font-size: 15px;
+                letter-spacing: 0;
+                line-height: normal;
+                white-space: nowrap;
+          }
+
+          .landing-page .span {
+                font-weight: 700;
+          }
+
+          .landing-page .text-wrapper-4 {
+                font-family: "Montserrat-Medium", Helvetica;
+                font-weight: 500;
+          }
+
+          .landing-page .overlap-3 {
+                position: absolute;
+                width: 140vw;
+                height: 80vh;
+                top: 130px;
+                left: 0;
+          }
+
+          .landing-page .element {
+                background-image: url('../public/img/login.jpeg');
+                background-color: transparent;
+                background-repeat: no-repeat; /* Prevent image from repeating */
+                background-size: cover;
+
+                width: 1440px;
+                height: 594px;
+                top: 0;
+                left: 0;
+          }
+
+          .landing-page .rectangle {
+                position: absolute;
+                width: 220px;
+                height: 64px;
+                top: 408px;
+                left: 65px;
+                background-color: #009c86;
+                border-radius: 30px;
+          }
+
+          .landing-page .rectangle-2 {
+                position: absolute;
+                width: 220px;
+                height: 64px;
+                top: 408px;
+                left: 339px;
+                border-radius: 30px;
+                border: 1px solid;
+                border-color: #000000;
+          }
+
+          .landing-page .frame {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                top: 98px;
+                left: 65px;
+                display: inline-flex;
+                position: absolute;
+          }
+
+          .landing-page .group-3 {
+                position: relative;
+                width: 799px;
+                height: 269px;
+                margin-right: -4px;
+          }
+
+          .landing-page .p {
+                position: absolute;
+                width: 668px;
+                top: 89px;
+                left: 0;
+                font-family: "Poppins-Light", Helvetica;
+                font-weight: 300;
+                color: #000000;
+                font-size: 40px;
+                letter-spacing: 0;
+                line-height: normal;
+          }
+
+          .landing-page .text-wrapper-5 {
+                position: absolute;
+                width: 795px;
+                top: 0;
+                left: 0;
+                font-family: "Poppins-Regular", Helvetica;
+                font-weight: 400;
+                color: #000000;
+                font-size: 50px;
+                letter-spacing: 0;
+                line-height: normal;
+          }
+
+          .landing-page .text-wrapper-6 {
+                text-decoration: none;
+                position: absolute;
+                top: 420px;
+                left: 143px;
+                font-family: "Poppins-Light", Helvetica;
+                font-weight: 300;
+                color: #ffffff;
+                font-size: 25px;
+                letter-spacing: 0;
+                line-height: normal;
+          }
+
+          .text-wrapper-6 a{
+                text-decoration: none;
+          }
+
+          .landing-page .text-wrapper-7 {
+                text-decoration: none;
+                position: absolute;
+                top: 420px;
+                left: 399px;
+                font-family: "Poppins-Light", Helvetica;
+                font-weight: 300;
+                color: #000000;
+                font-size: 25px;
+                letter-spacing: 0;
+                line-height: normal;
+          }
+
+          .text-wrapper-7 a{
+                text-decoration: none;
+          }
+          .landing-page .img {
+                border-radius: 50%;
+                border-color: #d9d9d9;
+                position: absolute;
+                width: 446px;
+                height: 446px;
+                top: 78px;
+                left: 931px;
+                object-fit: cover;
+          }
+
+          .landing-page .rectangle-3 {
+                position: absolute;
+                width: 1440px;
+                height: 181px;
+                top: 593px;
+                left: 0;
+                background-color: #009c86;
+          }
+
+          .landing-page .text-wrapper-8 {
+                position: absolute;
+                width: 833px;
+                top: 653px;
+                left: 303px;
+                font-family: "Poppins-ExtraLight", Helvetica;
+                font-weight: 200;
+                color: #ffffff;
+                font-size: 40px;
+                letter-spacing: 0;
+                line-height: normal;
+          }
+
+          .landing-page .div-wrapper {
+                position: absolute;
+                width: 1440px;
+                height: 181px;
+                top: 3374px;
+                left: 1px;
+                background-color: #009c86;
+          }
+
+          .landing-page .text-wrapper-9 {
+                position: absolute;
+                top: 56px;
+                left: 432px;
+                font-family: "Poppins-ExtraLight", Helvetica;
+                font-weight: 200;
+                color: #ffffff;
+                font-size: 45px;
+                letter-spacing: 0;
+                line-height: normal;
+          }
+
+          .landing-page .overlap-4 {
+                position: absolute;
+                width: 1440px;
+                height: 181px;
+                top: 2576px;
+                left: -1px;
+                background-color: #009c86;
+          }
+
+          .landing-page .text-wrapper-10 {
+                top: 56px;
+                left: 506px;
+                font-family: "Poppins-ExtraLight", Helvetica;
+                font-weight: 200;
+                color: #ffffff;
+                font-size: 45px;
+                position: absolute;
+                letter-spacing: 0;
+                line-height: normal;
+          }
+
+          .landing-page .frame-2 {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 138px;
+                top: 998px;
+                left: 100px;
+                display: inline-flex;
+                position: absolute;
+          }
+
+          .landing-page .group-4 {
+                position: relative;
+                width: 1268px;
+                height: 406px;
+                margin-right: -4px;
+          }
+
+          .landing-page .text-wrapper-11 {
+                position: absolute;
+                top: 0;
+                left: 495px;
+                font-family: "Poppins-Regular", Helvetica;
+                font-weight: 400;
+                color: #000000;
+                font-size: 40px;
+                letter-spacing: 0;
+                line-height: normal;
+          }
+
+          .landing-page .text-wrapper-12 {
+                position: absolute;
+                width: 769px;
+                top: 60px;
+                left: 495px;
+                font-family: "Poppins-ExtraLight", Helvetica;
+                font-weight: 200;
+                color: #000000;
+                font-size: 40px;
+                letter-spacing: 0;
+                line-height: normal;
+          }
+
+          .landing-page .rectangle-4 {
+                border-radius: 10%;
+                position: absolute;
+                width: 414px;
+                height: 414px;
+                top: 0;
+                left: -4px;
+                object-fit: cover;
+          }
+
+          .landing-page .group-5 {
+                position: relative;
+                width: 1267px;
+                height: 406px;
+                margin-right: -3px;
+          }
+
+          .landing-page .text-wrapper-13 {
+                position: absolute;
+                width: 801px;
+                top: 0;
+                left: 0;
+                font-family: "Poppins-Regular", Helvetica;
+                font-weight: 400;
+                color: #000000;
+                font-size: 40px;
+                letter-spacing: 0;
+                line-height: normal;
+          }
+
+          .landing-page .this-ensures-members {
+                position: absolute;
+                width: 769px;
+                top: 120px;
+                left: 0;
+                font-family: "Poppins-ExtraLight", Helvetica;
+                font-weight: 200;
+                color: #000000;
+                font-size: 40px;
+                letter-spacing: 0;
+                line-height: normal;
+          }
+
+          .landing-page .rectangle-5 {
+                position: absolute;
+                width: 414px;
+                height: 414px;
+                top: 0;
+                left: 853px;
+                object-fit: cover;
+          }
+
+          .landing-page .frame-3 {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 48px;
+                top: 3603px;
+                left: 66px;
+                display: inline-flex;
+                position: absolute;
+          }
+
+          .landing-page .overlap-group-wrapper {
+                position: relative;
+                width: 1314px;
+                height: 275px;
+                margin-right: -4px;
+          }
+
+          .landing-page .overlap-group-2 {
+                position: relative;
+                width: 1310px;
+                height: 275px;
+          }
+
+          .landing-page .text-wrapper-14 {
+                position: absolute;
+                width: 1310px;
+                top: 104px;
+                left: 0;
+                font-family: "Poppins-ExtraLight", Helvetica;
+                font-weight: 200;
+                color: #000000;
+                font-size: 38px;
+                letter-spacing: 0;
+                line-height: normal;
+          }
+
+          .landing-page .text-wrapper-15 {
+                position: absolute;
+                width: 1289px;
+                top: 0;
+                left: 0;
+                font-family: "Poppins-Regular", Helvetica;
+                font-weight: 400;
+                color: #000000;
+                font-size: 38px;
+                letter-spacing: 0;
+                line-height: normal;
+          }
+
+          .landing-page .group-6 {
+                position: relative;
+                width: 1314px;
+                height: 239px;
+                margin-right: -4px;
+          }
+
+          .landing-page .text-wrapper-16 {
+                position: absolute;
+                width: 1310px;
+                top: 68px;
+                left: 0;
+                font-family: "Poppins-ExtraLight", Helvetica;
+                font-weight: 200;
+                color: #000000;
+                font-size: 38px;
+                letter-spacing: 0;
+                line-height: normal;
+          }
+
+          .landing-page .overlap-wrapper {
+                position: relative;
+                width: 1314px;
+                height: 230px;
+                margin-right: -4px;
+          }
+
+          .landing-page .overlap-5 {
+                position: relative;
+                width: 1310px;
+                height: 230px;
+          }
+
+          .landing-page .text-wrapper-17 {
+                position: absolute;
+                width: 1310px;
+                top: 117px;
+                left: 0;
+                font-family: "Poppins-ExtraLight", Helvetica;
+                font-weight: 200;
+                color: #000000;
+                font-size: 38px;
+                letter-spacing: 0;
+                line-height: normal;
+          }
+
+          .landing-page .group-7 {
+                position: relative;
+                width: 1314px;
+                height: 241px;
+                margin-right: -4px;
+          }
+
+          .landing-page .group-8 {
+                position: relative;
+                width: 1314px;
+                height: 222px;
+                margin-right: -4px;
+          }
+
+          .landing-page .text-wrapper-18 {
+                position: absolute;
+                width: 1310px;
+                top: 110px;
+                left: 0;
+                font-family: "Poppins-ExtraLight", Helvetica;
+                font-weight: 200;
+                color: #000000;
+                font-size: 38px;
+                letter-spacing: 0;
+                line-height: normal;
+          }
+
+          .landing-page .image {
+                width: 237px;
+                top: 2873px;
+                left: 602px;
+                position: absolute;
+                height: 151px;
+          }
+
+          .landing-page .image-2 {
+                width: 305px;
+                top: 2860px;
+                left: 151px;
+                position: absolute;
+                height: 151px;
+          }
+
+          .landing-page .image-3 {
+                width: 252px;
+                top: 2860px;
+                left: 1102px;
+                position: absolute;
+                height: 151px;
+          }
+
+          .landing-page .unnamed {
+                position: absolute;
+                width: 40vw;
+                height: 40vh;
+                top: 3064px;
+                left: 84px;
+          }
+
+          .landing-page .overlap-6 {
+                position: absolute;
+                width: 1440px;
+                height: 425px;
+                top: 5419px;
+                left: 1px;
+                background-color: #009c86;
+          }
+
+          .landing-page .out-settle-2 {
+                position: absolute;
+                top: 29px;
+                left: 617px;
+                font-family: "Montserrat-Bold", Helvetica;
+                font-weight: 400;
+                color: #ffffff;
+                font-size: 45px;
+                letter-spacing: 0;
+                line-height: normal;
+          }
+
+          .landing-page .text-wrapper-19 {
+                font-size: 40px;
+                font-family: "Montserrat-Medium", Helvetica;
+                font-weight: 500;
+          }
+
+          .landing-page .frame-4 {
+                align-items: center;
+                gap: 47px;
+                top: 124px;
+                left: 358px;
+                display: inline-flex;
+                position: absolute;
+          }
+
+          .landing-page .text-wrapper-20 {
+                position: relative;
+                width: 112px;
+                height: 34px;
+                margin-top: -1px;
+                font-family: "Poppins-Light", Helvetica;
+                font-weight: 300;
+                color: #ffffff;
+                font-size: 25px;
+                letter-spacing: 0;
+                line-height: normal;
+          }
+
+          .landing-page .ellipse {
+                position: relative;
+                width: 10px;
+                height: 10px;
+                background-color: #d9d9d9;
+                border-radius: 5px;
+          }
+
+          .landing-page .text-wrapper-21 {
+                position: relative;
+                width: 201px;
+                height: 34px;
+                margin-top: -1px;
+                font-family: "Poppins-Light", Helvetica;
+                font-weight: 300;
+                color: #ffffff;
+                font-size: 25px;
+                letter-spacing: 0;
+                line-height: normal;
+          }
+
+          .landing-page .text-wrapper-22 {
+                position: absolute;
+                width: 1129px;
+                top: 224px;
+                left: 154px;
+                font-family: "Poppins-Light", Helvetica;
+                font-weight: 300;
+                color: #ffffff;
+                font-size: 20px;
+                text-align: center;
+                letter-spacing: 0;
+                line-height: normal;
+          }
+
+          .landing-page .element-outsettle {
+                position: absolute;
+                width: 218px;
+                top: 350px;
+                left: 610px;
+                font-family: "Poppins-Light", Helvetica;
+                font-weight: 300;
+                color: #ffffff;
+                font-size: 25px;
+                letter-spacing: 0;
+                line-height: normal;
+          }
+
+          .landing-page .line {
+                position: absolute;
+                width: 1215px;
+                height: 1px;
+                top: 203px;
+                left: 111px;
+                object-fit: cover;
+          }
+
+      </style>
+     </head>
+ <body>
+  <div class="landing-page">
+       <div class="div">
+            <div class="overlap">
+             <div class="overlap-group">
+                  <div class="text-wrapper"><input type="text" name="" id="" placeholder="  Search"></div>
+                   
+                 
+                 </div>
+             <div class="group">
+                  <div class="text-wrapper-2"><a href="#" target="_main">Track the status</a></div>
+                  <div class="text-wrapper-3"><a href="#" target="_main">Insurance claim</a></div>
+                 </div>
+             <div class="group-2">
+                  <div class="overlap-2">
+                       <img class="logo-shapes" src="img/homepage_logo.png" width="100vw"/>
+                      </div>
+                 
+                 </div>
+                </div>
+            <div class="overlap-3">
+              <div class="p-3 mb-2 bg-transparent text-body"><img src="img/login.jpg" width="2000vw" height="700vh"></div>
+             <div class="rectangle"></div>
+             <div class="rectangle-2"></div>
+             <div class="frame">
+                  <div class="group-3">
+                       <p class="p">Experience streamlined accuracy and efficiency, complete with real-time claim tracking.</p>
+                       <div class="text-wrapper-5">Transforming Medical Billing:</div>
+                      </div>
+                 </div>
+             <div class="text-wrapper-6"><a href="#" target="_main">Login</a></div>
+             <div class="text-wrapper-7"><a href="#" target="_main">Register</a></div>
+             <img class="img" src="img/WhatsApp Image 2023-09-20 at 02.18.443.jpg" />
+             <div class="rectangle-3"></div>
+             <p class="text-wrapper-8">Simplifying healthcare, one step at a time.</p>
+                </div>
+            <div class="div-wrapper"><div class="text-wrapper-9">Frequently asked question</div></div>
+            <div class="overlap-4"><div class="text-wrapper-10">Insurance Providers</div></div>
+            <div class="frame-2">
+             <div class="group-4">
+                  <p class="text-wrapper-11">Track the status of your Claims</p>
+                  <p class="text-wrapper-12">
+                       Enables members to keep themselves informed about the progress of their claims and catch any potential
+                       issues at an early stage.
+                      </p>
+                  <img class="rectangle-4" src="img/WhatsApp Image 2023-09-20 at 04.02.22.jpg" />
+                 </div>
+             <div class="group-5">
+                  <p class="text-wrapper-13">Receive notifications about the status of claims</p>
+                  <p class="this-ensures-members">
+                       This ensures members stay informed about their claims&#39; status effortlessly, eliminating the need for
+                       website logins or calls to the insurance company.
+                      </p>
+                  <img class="rectangle-5" src="img/notification.jpg" />
+                 </div>
+             <div class="group-4">
+                  <p class="text-wrapper-11">Claim of the insurance Coverage</p>
+                  <p class="text-wrapper-12">
+                       Insurance coverage claims serve as a safety net, offering timely assistance and financial support when
+                       unforeseen circumstances disrupt your life.
+                      </p>
+                  <img class="rectangle-4" src="img/dollar.jpg" />
+                 </div>
+                </div>
+            <div class="frame-3">
+             <div class="overlap-group-wrapper">
+                  <div class="overlap-group-2">
+                       <p class="text-wrapper-14">
+                            Insurance coverage claims serve as a safety net, offering timely assistance and financial support when
+                            unforeseen circumstances disrupt your life.
+                           </p>
+                       <p class="text-wrapper-15">Q: How does the system keep me informed about my claim&#39;s progress?</p>
+                      </div>
+                 </div>
+             <div class="group-6">
+                  <p class="text-wrapper-16">
+                       Yes, we prioritize data security and follow stringent measures to safeguard your personal information in
+                       compliance with industry standards.
+                      </p>
+                  <p class="text-wrapper-15">Q: Is my personal information secure when using this system?</p>
+                 </div>
+             <div class="group-6">
+                  <p class="text-wrapper-16">
+                       You can track various types of insurance claims, including medical, auto, property, and more, depending on
+                       your coverage.
+                      </p>
+                  <p class="text-wrapper-15">Q: What types of claims can I track using this system?</p>
+                 </div>
+             <div class="overlap-wrapper">
+                  <div class="overlap-5">
+                       <p class="text-wrapper-17">
+                            Absolutely! Our cost estimation tool allows you to budget for healthcare expenses by providing estimates
+                            for medical procedures.
+                           </p>
+                       <p class="text-wrapper-15">
+                            Q: Can I estimate my out-of-pocket expenses for a medical procedure using this system?
+                           </p>
+                      </div>
+                 </div>
+             <div class="group-7">
+                  <p class="text-wrapper-17">
+                       You can easily report issues by using our electronic document upload feature, ensuring quick resolution by
+                       insurance providers.
+                      </p>
+                  <p class="text-wrapper-15">
+                       Q: How can I report an issue or discrepancy with my claim through this system?
+                      </p>
+                 </div>
+             <div class="group-8">
+                  <p class="text-wrapper-18">
+                       Yes, you can use our insurance plan comparison feature to compare coverage options and choose the plan
+                       that best suits your needs.
+                      </p>
+                  <p class="text-wrapper-15">
+                       Q: Does this system offer assistance in choosing the right insurance plan for my needs?
+                      </p>
+                 </div>
+                </div>
+            <img class="image" src="img/max life insurance.jpeg" />
+            <img class="image-2" src="img/lic.jpeg" />
+            <img class="image-3" src="img/icici.jpeg" />
+            <img class="unnamed" src="img/sbi.jpeg" />
+            <div class="overlap-6">
+             <p class="out-settle-2">
+                  <span class="span">O</span>
+                  <span class="text-wrapper-19">ut</span>
+                  <span class="span">S</span>
+                  <span class="text-wrapper-19">ettle</span>
+                 </p>
+             <div class="frame-4">
+                  <div class="text-wrapper-20">About us</div>
+                  <div class="ellipse"></div>
+                  <div class="text-wrapper-21">Track the status</div>
+                  <div class="ellipse"></div>
+                  <div class="text-wrapper-21">Insurance claim</div>
+                 </div>
+             <p class="text-wrapper-22">
+                  This is a fictional project and not affiliated with any real company. Any resemblance to actual products,
+                  services, or organizations is purely coincidental. This text is for demonstration purposes only and does not
+                  represent any official legal disclaimers or affiliations. ©2023 Your Hackathon Project.
+                 </p>
+             <div class="element-outsettle">© 2023 OutSettle</div>
+             <img class="line" src="img/line-1.svg" />
+                </div>
+           </div>
+      </div>
+ </body>
+</html>

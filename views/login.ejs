@@ -1,42 +1,252 @@
-<%- include('partials/header') %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .login {
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100vw;
+            height: 90vh;
+            margin: 0;
+            padding: 0;
 
-<div class="container mt-5">
-    <h1>Login</h1>
+        }
 
-    <div class="row">
-        <div class="col-sm-8">
-            <div class="card">
-                <div class="card-body">
+        .login .overlap-group-wrapper {
+            background-color: #ffffff;
+            width: 95vw;
+            height: 90vh;
+        }
 
-                    <!-- Makes POST request to /login route -->
-                    <form action="/login" method="POST">
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" class="form-control" name="username">
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Password</label>
-                            <input type="password" class="form-control" name="password">
-                        </div>
-                        <button type="submit" class="btn btn-dark">Login</button>
-                    </form>
+        .login .overlap-group {
+            position: relative;
+            height: 90vh;
+        }
 
+        .login .element {
+            position: absolute;
+            width: 1440px;
+            height: 1022px;
+            top: 2px;
+            left: 0;
+        }
+
+        .login .rectangle {
+            position: absolute;
+            width: 709px;
+            height: 1022px;
+            top: 0;
+            left: 731px;
+            background-color: #ffffffcc;
+        }
+
+        .login .text-wrapper {
+            position: absolute;
+            width: 614px;
+            top: 859px;
+            left: 779px;
+            font-family: "Poppins-ExtraLight", Helvetica;
+            font-weight: 200;
+            color: #000000;
+            font-size: 30px;
+            letter-spacing: 0;
+            line-height: normal;
+        }
+
+        .login .don-t-have-an {
+            position: absolute;
+            width: 292px;
+            top: 632px;
+            left: 940px;
+            font-family: "Poppins-ExtraLight", Helvetica;
+            font-weight: 400;
+            color: #000000;
+            font-size: 18px;
+            letter-spacing: 0;
+            line-height: normal;
+        }
+
+        .login .span {
+            font-weight: 200;
+        }
+
+        .login .text-wrapper-2 {
+            font-family: "Poppins-Medium", Helvetica;
+            font-weight: 500;
+        }
+
+        .login .text-wrapper-3 {
+            position: absolute;
+            width: 30vw;
+            top: 45vh;
+            left: 50vw;
+            font-family: "Poppins-Light", Helvetica;
+            font-weight: 800;
+            color: #000000;
+            font-size: 72px;
+            letter-spacing: 0;
+            line-height: normal;
+        }
+
+        .login .text-wrapper-3 input{
+            width :30vw;
+            height: 5vh;
+            border-radius: 15px;
+            margin: 0 16px 0 56px;
+            background-color:#009c8666;
+
+        }
+
+        .login .text-wrapper-6 {
+            position: absolute;
+            width: 121px;
+            top: 292px;
+            left: 1025px;
+            font-family: "Poppins-SemiBold", Helvetica;
+            font-weight: 600;
+            color: #000000;
+            font-size: 40px;
+            letter-spacing: 2.4px;
+            line-height: normal;
+        }
+
+        .login .text-wrapper-4 {
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            width: 30vw;
+            top: 58vh;
+            left: 50vw;
+            font-family: "Poppins-Light", Helvetica;
+            font-weight: 800;
+            color: #000000;
+            font-size: 52px;
+            letter-spacing: 0;
+            line-height: normal;
+        }
+
+        .log{
+            display:flex;
+            flex-direction: column;
+        }
+
+        .login .text-wrapper-4 input{
+            padding: 0;
+            align-content: center;
+            margin: 0;
+            width :30vw;
+            height: 40px;
+            border-radius: 15px;
+            margin: 0 16px 0 56px;
+            background-color: #009c8666;
+
+        }
+
+        .login .text-wrapper-5 {
+            position: absolute;
+            width: 77px;
+            top: 566px;
+            left: 65vw;
+            font-family: "Poppins-SemiBold", Helvetica;
+            font-weight: 600;
+            color: #009c86;
+            font-size: 20px;
+            letter-spacing: 0;
+            line-height: normal;
+        }
+
+        .btn{
+            height: 5vh;
+            width: 10vw;
+            padding:5px 10px;
+            color: white;
+            background: #009c86;
+            border-radius: 7px;
+            cursor: pointer;
+
+        }
+
+        .btn:hover{
+            background-color: white;
+            color: black;
+        }
+
+        .login .text-wrapper-7 {
+            position: absolute;
+            width: 30vw;
+            top: 700px;
+            left: 60vw;
+            font-family: "Poppins-SemiBold", Helvetica;
+            font-weight: 600;
+            color: #009c86;
+            font-size: 20px;
+            letter-spacing: 0;
+            line-height: normal;
+        }
+
+        .btn2{
+            height: 5vh;
+            width: 20vw;
+            padding:5px 10px;
+            color: white;
+            background: #009c86;
+            border-radius: 7px;
+            cursor: pointer;
+
+        }
+
+        .btn2:hover{
+            background-color: white;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+<div class="login">
+    <div class="overlap-group-wrapper">
+        <div class="overlap-group">
+            <img class="element" src="../public/img/login.jpeg" />
+            <div class="rectangle"></div>
+            <p class="text-wrapper">Simplifying healthcare, one step at a time</p>
+            <p class="don-t-have-an">
+                <span class="span">Don’t have an account? </span> <span class="text-wrapper-2"><a href="/register" target="_main">Register</a></span>
+            </p>
+
+            <div class="rectangle-2"></div>
+            <div class="rectangle-3"></div>
+            <form method="post" action="/login">
+                <div class="log">
+                    <div class="text-wrapper-3">
+                        <input type="text" name="" id="" placeholder="  Email">
+                    </div>
+                    <div class="text-wrapper-4">
+                        <input type="text" name="" id="" placeholder=" Password">
+                    </div>
                 </div>
+            </form>
+            <div class="text-wrapper-6">Login</div>
+            <div class="text-wrapper-5">
+                <button class="btn">Sign-In</button>
             </div>
-        </div>
 
-        <div class="col-sm-4">
-            <div class="card">
-                <div class="card-body">
-                    <a class="btn btn-block btn-social btn-google" href="/auth/google" role="button">
-                        <i class="fab fa-google"></i>
-                        Sign In with Google
-                    </a>
-                </div>
+            <div class="text-wrapper-7">
+                <a class="btn btn-block btn-social btn-google" href="/auth/google" role="button">
+                    <i class="fab fa-google"></i>
+                    Sign In with Google
+                </a>
             </div>
-        </div>
 
+        </div>
     </div>
+
 </div>
 
-<%- include('partials/footer') %>
+
+</body>
+</html>
